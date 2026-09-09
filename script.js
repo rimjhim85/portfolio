@@ -1,94 +1,188 @@
-// typing animation
+/* =========================
+   SCROLL REVEAL
+========================= */
 
-var typed=new Typed(".typing",{
-strings:["Rimjhim Chowdhury","a Web Developer","a CS Student"],
-typeSpeed:100,
-backSpeed:60,
-loop:true
+const revealElements = document.querySelectorAll(".reveal");
+
+const revealObserver = new IntersectionObserver(
+    (entries) => {
+
+        entries.forEach((entry) => {
+
+            if (entry.isIntersecting) {
+
+                entry.target.classList.add("visible");
+
+                revealObserver.unobserve(entry.target);
+
+            }
+
+        });
+
+    },
+    {
+        threshold: 0.12
+    }
+);
+
+revealElements.forEach((element) => {
+    revealObserver.observe(element);
 });
 
 
-// scroll reveal animation
+/* =========================
+   PROJECT VISUAL PARALLAX
+========================= */
 
-window.addEventListener('scroll', reveal);
+const projectVisuals = document.querySelectorAll(".project-visual");
 
-function reveal(){
+projectVisuals.forEach((visual) => {
 
-var reveals=document.querySelectorAll('.reveal');
+    visual.addEventListener("mousemove", (event) => {
 
-for(var i=0;i<reveals.length;i++){
+        const rect = visual.getBoundingClientRect();
 
-var windowHeight=window.innerHeight;
+        const x =
+            (event.clientX - rect.left) / rect.width - 0.5;
 
-var elementTop=reveals[i].getBoundingClientRect().top;
+        const y =
+            (event.clientY - rect.top) / rect.height - 0.5;
 
-var elementVisible=150;
+        visual.style.setProperty(
+            "--mouse-x",
+            `${x * 14}px`
+        );
 
-if(elementTop < windowHeight - elementVisible){
+        visual.style.setProperty(
+            "--mouse-y",
+            `${y * 14}px`
+        );
 
-reveals[i].classList.add('active');
+    });
 
+
+    visual.addEventListener("mouseleave", () => {
+
+        visual.style.setProperty(
+            "--mouse-x",
+            "0px"
+        );
+
+        visual.style.setProperty(
+            "--mouse-y",
+            "0px"
+        );
+
+    });
+
+});
+
+
+/* =========================
+   SMALL PROJECT MOTION
+========================= */
+
+document.querySelectorAll(".project").forEach((project) => {
+
+    project.addEventListener("mouseenter", () => {
+
+        project.classList.add("project-active");
+
+    });
+
+    project.addEventListener("mouseleave", () => {
+
+        project.classList.remove("project-active");
+
+    });
+
+});
+
+
+/* =========================
+   SMOOTH INTERNAL LINKS
+========================= */
+
+document.querySelectorAll('a[href^="#"]').forEach((link) => {
+
+    link.addEventListener("click", (event) => {
+
+        const targetId = link.getAttribute("href");
+
+        if (targetId === "#") {
+            return;
+        }
+
+        const target = document.querySelector(targetId);
+
+        if (!target) {
+            return;
+        }
+
+        event.preventDefault();
+
+        target.scrollIntoView({
+            behavior: "smooth",
+            block: "start"
+        });
+
+    });
+
+});
+
+
+/* =========================
+   DYNAMIC YEAR
+========================= */
+
+const yearElement = document.getElementById("year");
+
+if (yearElement) {
+    yearElement.textContent = new Date().getFullYear();
 }
 
-}
 
-}
+/* =========================
+   ACTIVE NAVIGATION
+========================= */
 
+const sections = document.querySelectorAll(
+    "section[id]"
+);
 
-// GOOGLE SHEET FORM
+const navLinks = document.querySelectorAll(
+    ".nav nav a"
+);
 
-const scriptURL = 'https://script.google.com/macros/s/AKfycbxd8XZLpd2ZoSIIRXSuXkgJQGZhnWM6JrbRVy2V5TgmlnFx29pQEw2T3ZCboBlWzHS_Ww/exec'
+const sectionObserver = new IntersectionObserver(
+    (entries) => {
 
-const form = document.forms['submit-to-google-sheet']
+        entries.forEach((entry) => {
 
-const msg = document.getElementById("msg")
+            if (entry.isIntersecting) {
 
-form.addEventListener('submit', e => {
+                navLinks.forEach((link) => {
+                    link.classList.remove("active");
+                });
 
-e.preventDefault()
+                const activeLink = document.querySelector(
+                    `.nav nav a[href="#${entry.target.id}"]`
+                );
 
-fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                if (activeLink) {
+                    activeLink.classList.add("active");
+                }
 
-.then(response => {
+            }
 
-msg.innerHTML="Message Sent Successfully!"
+        });
 
-setTimeout(function(){
-msg.innerHTML=""
-},5000)
+    },
+    {
+        threshold: 0.35
+    }
+);
 
-form.reset()
-
-alert("Message Sent Successfully!")
-
-})
-
-.catch(error => console.error('Error!', error.message))
-
-})
-var tablinks=document.getElementsByClassName("tab-links");
-var tabcontents=document.getElementsByClassName("tab-contents");
-
-function opentab(tabname){
-
-for(tablink of tablinks){
-tablink.classList.remove("active-link");
-}
-
-for(tabcontent of tabcontents){
-tabcontent.classList.remove("active-tab");
-}
-
-event.currentTarget.classList.add("active-link");
-document.getElementById(tabname).classList.add("active-tab");
-
-}
-var sidemenu = document.getElementById("sidemenu");
-
-function openmenu(){
-sidemenu.style.right="0";
-}
-
-function closemenu(){
-sidemenu.style.right="-200px";
-}
+sections.forEach((section) => {
+    sectionObserver.observe(section);
+});

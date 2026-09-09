@@ -1,283 +1,973 @@
-
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+        name="description"
+        content="Rimjhim Chowdhury — Developer portfolio."
+    >
 
-<title>Rimjhim Chowdhury Portfolio</title>
+    <title>Rimjhim Chowdhury — Developer</title>
 
-<link rel="stylesheet" href="style.css">
-
-<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<!-- HEADER -->
+<header class="nav">
 
-<div id="header">
+    <a href="#top" class="brand">
+        <img src="assets/profile.png" alt="Rimjhim Chowdhury">
+    </a>
 
-<div class="container">
+    <nav>
+        <a href="#work">01 Work</a>
+        <a href="#about">02 About</a>
+        <a href="#skills">03 Skills</a>
+        <a href="#contact">04 Contact</a>
+    </nav>
 
-<nav>
+</header>
 
-<h2 class="logo">Rimjhim<span>.</span></h2>
 
-<ul id="sidemenu">
+<main id="top">
 
-<li><a href="#header">Home</a></li>
-<li><a href="#about">About</a></li>
-<li><a href="#portfolio">Work</a></li>
-<li><a href="#contact">Contact</a></li>
+    <!-- ================= HERO ================= -->
 
-<li>
-<a href="https://github.com/rimjhim85" target="_blank">
-<i class='bx bxl-github'></i>
-</a>
-</li>
+    <section class="hero">
 
-<i class='bx bx-x' onclick="closemenu()"></i>
+        <div class="hero-kicker">
+            DEVELOPER · KOLKATA, INDIA
+        </div>
 
-</ul>
+        <h1>
+            Building things<br>
+            <em>worth using.</em>
+        </h1>
 
-<i class='bx bx-menu' onclick="openmenu()"></i>
+        <div class="hero-bottom">
 
-</nav>
+            <p>
+                I'm Rimjhim — a Computer Science graduate
+                building web applications, AI-powered tools
+                and interactive experiences.
+            </p>
 
-<div class="header-text">
+            <div class="hero-actions">
 
-<p>Computer Science Student</p>
+                <a href="#work" class="primary-button">
+                    View Work <span>↘</span>
+                </a>
 
-<h1>Hi, I'm <span class="typing"></span></h1>
+                <a
+                    href="assets/Rimjhim-Chowdhury-Resume.pdf"
+                    class="secondary-button"
+                    target="_blank"
+                >
+                    Resume ↗
+                </a>
 
-<p>Based in Kolkata</p>
+            </div>
 
-</div>
+        </div>
 
-</div>
+    </section>
 
-</div>
 
+    <!-- ================= CURRENTLY ================= -->
 
-<!-- ABOUT -->
+    <section class="currently">
 
-<section id="about" class="reveal">
+        <div class="currently-label">
+            CURRENTLY
+        </div>
 
-<div class="container">
+        <div class="currently-line">
+            <span class="status-dot"></span>
 
-<div class="row">
+            <p>
+                Building projects with Python, JavaScript,
+                Flask and AI APIs.
+            </p>
+        </div>
 
-<div class="about-col-1">
+        <div class="currently-year">
+            2026
+        </div>
 
-<img src="images/phonebackground.png">
+    </section>
 
-</div>
 
-<div class="about-col-2">
+    <!-- ================= PROJECTS ================= -->
 
-<h1 class="sub-title">About Me</h1>
+    <section id="work" class="work">
 
-<p>
-Final year Computer Science student passionate about Web Development
-and Machine Learning. I enjoy building AI-powered applications
-and interactive web platforms.
-</p>
+        <div class="section-intro">
 
-<div class="tab-titles">
+            <span>01 / SELECTED WORK</span>
 
-<p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
-<p class="tab-links" onclick="opentab('education')">Education</p>
+            <h2>
+                Things I've<br>
+                <em>built.</em>
+            </h2>
 
-</div>
+        </div>
 
-<div class="tab-contents active-tab" id="skills">
 
-<ul>
+        <div class="projects">
 
-<li><span>Web Development</span><br>HTML, CSS, JavaScript, Flask</li>
 
-<li><span>Programming</span><br>Python, Java, C++</li>
+            <!-- ================= PROJECT 01 ================= -->
 
-<li><span>Machine Learning</span><br>Scikit-learn, Pandas</li>
+            <article class="project reveal">
 
-</ul>
+                <div class="project-visual india-visual">
 
-</div>
+                    <div class="india-heading">
+                        EXPLORE<br>
+                        <span>INDIA</span>
+                    </div>
 
-<div class="tab-contents" id="education">
+                    <div class="india-sun"></div>
 
-<ul>
+                    <div class="india-mountain mountain-back"></div>
+                    <div class="india-mountain mountain-middle"></div>
+                    <div class="india-mountain mountain-front"></div>
 
-<li><span>2022-2026</span><br>B.Tech CSE – 7.3 CGPA</li>
-<li><span>2022</span><br>Higher Secondary – 87.6%</li>
-<li><span>2020</span><br>Secondary – 92%</li>
+                    <div class="india-ground"></div>
 
-</ul>
+                    <div class="india-route route-one"></div>
+                    <div class="india-route route-two"></div>
 
-</div>
+                    <div class="india-pin pin-one"></div>
+                    <div class="india-pin pin-two"></div>
+                    <div class="india-pin pin-three"></div>
 
-</div>
+                    <div class="india-sign">
+                        <span>DISCOVER</span>
+                        <span>PLAN</span>
+                        <span>TRAVEL</span>
+                    </div>
 
-</div>
+                    <div class="india-cloud cloud-one"></div>
+                    <div class="india-cloud cloud-two"></div>
 
-</div>
+                </div>
 
-</section>
 
+                <div class="project-content">
 
-<!-- PORTFOLIO -->
+                    <div class="project-left">
 
-<section id="portfolio" class="reveal">
+                        <span class="project-number">01</span>
 
-<div class="container">
+                        <div>
 
-<h1 class="sub-title">My Work</h1>
+                            <p class="project-category">
+                                WEB APP · TRAVEL
+                            </p>
 
-<div class="work-list">
+                            <h3>
+                                Explore India
+                            </h3>
 
+                        </div>
 
-<!-- AI CHATBOT -->
+                    </div>
 
-<div class="work">
 
-<img src="images/work1.png">
+                    <div class="project-middle">
 
-<div class="layer">
+                        <p>
+                            A travel discovery platform for exploring
+                            destinations across India, searching places,
+                            discovering destinations based on preferences,
+                            and getting trip suggestions through an
+                            AI-powered planner.
+                        </p>
 
-<h3>AI Chatbot</h3>
+                        <div class="tags">
+                            <span>Web</span>
+                            <span>AI</span>
+                            <span>Search</span>
+                            <span>Maps</span>
+                        </div>
 
-<p>Flask based chatbot powered with AI responses.</p>
+                    </div>
 
-<div class="project-links">
 
-<a href="https://aichatbot-yfke.onrender.com/" target="_blank">
-<i class='bx bx-link-external'></i> Live
-</a>
+                    <div class="project-action">
 
-<a href="https://github.com/rimjhim85/AIBot" target="_blank">
-<i class='bx bxl-github'></i> Code
-</a>
+                        <a
+                            href="https://explore-india-5urf.onrender.com/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Live ↗
+                        </a>
 
-</div>
+                    </div>
 
-</div>
+                </div>
 
-</div>
+            </article>
 
 
-<!-- PORTFOLIO WEBSITE -->
 
-<div class="work">
+            <!-- ================= PROJECT 02 ================= -->
 
-<img src="images/work2.png">
+            <article class="project reveal">
 
-<div class="layer">
+                <div class="project-visual movie-visual">
 
-<h3>Portfolio Website</h3>
+                    <div class="movie-big">
+                        98<span>%</span>
+                    </div>
 
-<p>Personal developer portfolio built using HTML, CSS and JavaScript.</p>
+                    <div class="movie-word">
+                        MATCH
+                    </div>
 
-<div class="project-links">
+                    <div class="film film-one"></div>
+                    <div class="film film-two"></div>
+                    <div class="film film-three"></div>
 
-<a href="#" target="_blank">
-<i class='bx bx-link-external'></i> Live
-</a>
+                    <div class="movie-circle">
+                        <span>RECOMMEND</span>
+                    </div>
 
-<a href="https://github.com/rimjhim85/portfolio" target="_blank">
-<i class='bx bxl-github'></i> Code
-</a>
+                    <div class="movie-small">
+                        MOVIE<br>
+                        MIND
+                    </div>
 
-</div>
+                </div>
 
-</div>
 
-</div>
+                <div class="project-content">
 
-</div>
+                    <div class="project-left">
 
-</div>
+                        <span class="project-number">02</span>
 
-</section>
+                        <div>
 
+                            <p class="project-category">
+                                MACHINE LEARNING · FLASK
+                            </p>
 
-<!-- CONTACT -->
+                            <h3>
+                                MovieMind
+                            </h3>
 
-<section id="contact" class="reveal">
+                        </div>
 
-<div class="container">
+                    </div>
 
-<div class="row">
 
-<div class="contact-left">
+                    <div class="project-middle">
 
-<h1 class="sub-title">Contact Me</h1>
+                        <p>
+                            A movie recommendation web application
+                            using content-based filtering and cosine
+                            similarity to generate personalized movie
+                            suggestions.
+                        </p>
 
-<p>
-<i class='bx bxs-send'></i>
-<a href="mailto:rimjhimchowdhury995@gmail.com">
-rimjhimchowdhury995@gmail.com
-</a>
-</p>
+                        <div class="tags">
+                            <span>Python</span>
+                            <span>Flask</span>
+                            <span>Pandas</span>
+                            <span>Scikit-learn</span>
+                        </div>
 
-<p>
-<i class='bx bxs-phone'></i>
-<a href="tel:+9173841334850">
-+91 73841334850
-</a>
-</p>
+                    </div>
 
-<a href="resume.pdf" download class="btn btn2">Download Resume</a>
 
-</div>
+                    <div class="project-action">
 
+                        <a
+                            href="https://moviemind-192d.onrender.com/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Live ↗
+                        </a>
 
-<div class="contact-right">
+                    </div>
 
-<form name="submit-to-google-sheet">
+                </div>
 
-<input type="text" name="Name" placeholder="Your Name" required>
+            </article>
 
-<input type="email" name="Email" placeholder="Your Email" required>
 
-<textarea name="Message" rows="6" placeholder="Your Message"></textarea>
 
-<button type="submit" class="btn">Submit</button>
+            <!-- ================= PROJECT 03 ================= -->
 
-</form>
+            <article class="project reveal">
 
-<span id="msg"></span>
+                <div class="project-visual interview-visual">
 
-</div>
+                    <div class="quote-mark">
+                        “
+                    </div>
 
-</div>
+                    <div class="interview-main">
+                        INTERVIEW
+                    </div>
 
-</div>
+                    <div class="interview-sub">
+                        PRACTICE · SPEAK · IMPROVE
+                    </div>
 
-</section>
+                    <div class="voice-lines">
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                    </div>
 
+                    <div class="voice-circle">
+                        MIC
+                    </div>
 
-<!-- FOOTER -->
+                    <div class="feedback-word">
+                        FEEDBACK
+                    </div>
 
-<footer>
+                </div>
 
-<p>
-© 2026 Rimjhim Chowdhury • Portfolio Website
-</p>
 
-</footer>
+                <div class="project-content">
 
+                    <div class="project-left">
 
-<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+                        <span class="project-number">03</span>
+
+                        <div>
+
+                            <p class="project-category">
+                                AI · VOICE · WEB
+                            </p>
+
+                            <h3>
+                                AI Interview Practice
+                            </h3>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="project-middle">
+
+                        <p>
+                            An AI-based interview preparation platform
+                            that simulates technical interviews and
+                            provides response analysis and improvement
+                            suggestions.
+                        </p>
+
+                        <div class="tags">
+                            <span>JavaScript</span>
+                            <span>Gemini API</span>
+                            <span>Web Speech API</span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="project-action">
+
+                        <a
+                            href="https://papaya-zuccutto-d315a2.netlify.app/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Live ↗
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- ================= PROJECT 04 ================= -->
+
+            <article class="project reveal">
+
+                <div class="project-visual chatbot-visual">
+
+                    <div class="chat-word">
+                        HELLO
+                    </div>
+
+                    <div class="chat-question">
+                        HOW CAN<br>
+                        I HELP?
+                    </div>
+
+                    <div class="bubble bubble-one">
+                        ask
+                    </div>
+
+                    <div class="bubble bubble-two">
+                        think
+                    </div>
+
+                    <div class="bubble bubble-three">
+                        reply
+                    </div>
+
+                    <div class="connection connection-one"></div>
+                    <div class="connection connection-two"></div>
+                    <div class="connection connection-three"></div>
+
+                    <div class="chat-dot dot-one"></div>
+                    <div class="chat-dot dot-two"></div>
+                    <div class="chat-dot dot-three"></div>
+
+                    <div class="chat-label">
+                        INTELLIGENT<br>
+                        CHATBOT
+                    </div>
+
+                </div>
+
+
+                <div class="project-content">
+
+                    <div class="project-left">
+
+                        <span class="project-number">04</span>
+
+                        <div>
+
+                            <p class="project-category">
+                                FULL-STACK · FLASK
+                            </p>
+
+                            <h3>
+                                Intelligent Chatbot
+                            </h3>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="project-middle">
+
+                        <p>
+                            A full-stack chatbot application with a
+                            Flask backend, real-time messaging and a
+                            responsive interface for desktop and mobile.
+                        </p>
+
+                        <div class="tags">
+                            <span>Python</span>
+                            <span>Flask</span>
+                            <span>JavaScript</span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="project-action">
+
+                        <a
+                            href="https://aichatbot-yfke.onrender.com/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Live ↗
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- ================= PROJECT 05 ================= -->
+
+            <article class="project reveal">
+
+                <div class="project-visual ttt-visual">
+
+                    <div class="ttt-board">
+
+                        <div class="x">×</div>
+                        <div class="o">○</div>
+                        <div></div>
+
+                        <div></div>
+                        <div class="x">×</div>
+                        <div class="o">○</div>
+
+                        <div class="o">○</div>
+                        <div></div>
+                        <div class="x">×</div>
+
+                    </div>
+
+                    <div class="ttt-big">
+                        PLAY.
+                    </div>
+
+                    <div class="ttt-note">
+                        SMALL GAME<br>
+                        BIG JOY
+                    </div>
+
+                </div>
+
+
+                <div class="project-content">
+
+                    <div class="project-left">
+
+                        <span class="project-number">05</span>
+
+                        <div>
+
+                            <p class="project-category">
+                                JAVASCRIPT · GAME
+                            </p>
+
+                            <h3>
+                                Tic-Tac-Toe
+                            </h3>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="project-middle">
+
+                        <p>
+                            A browser-based Tic-Tac-Toe game with
+                            interactive gameplay, win detection and
+                            draw handling.
+                        </p>
+
+                        <div class="tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="project-action">
+
+                        <a
+                            href="https://rimjhim85.github.io/tic-tac-toe/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Live ↗
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= WHAT I BUILD ================= -->
+
+    <section class="build-section">
+
+        <div class="section-intro">
+
+            <span>01.5 / WHAT I BUILD</span>
+
+            <h2>
+                More than<br>
+                <em>just code.</em>
+            </h2>
+
+        </div>
+
+
+        <div class="build-grid">
+
+            <div class="build-card">
+                <span>01</span>
+                <h3>Web Experiences</h3>
+                <p>
+                    Responsive interfaces that feel simple,
+                    intentional and easy to use.
+                </p>
+            </div>
+
+            <div class="build-card">
+                <span>02</span>
+                <h3>AI-Powered Tools</h3>
+                <p>
+                    Practical applications using AI APIs,
+                    recommendation systems and conversational
+                    interfaces.
+                </p>
+            </div>
+
+            <div class="build-card">
+                <span>03</span>
+                <h3>Full-Stack Applications</h3>
+                <p>
+                    Frontend and backend systems connected
+                    through APIs and real application logic.
+                </p>
+            </div>
+
+            <div class="build-card">
+                <span>04</span>
+                <h3>Interactive Projects</h3>
+                <p>
+                    Small experiments and web experiences
+                    built to be actually interacted with.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= ABOUT ================= -->
+
+    <section id="about" class="about">
+
+        <div class="section-intro">
+
+            <span>02 / ABOUT</span>
+
+            <h2>
+                A little<br>
+                <em>about me.</em>
+            </h2>
+
+        </div>
+
+
+        <div class="about-content">
+
+            <p class="about-lead">
+                I like taking an idea from a blank screen
+                to something people can actually interact with.
+            </p>
+
+
+            <div class="about-text">
+
+                <p>
+                    I'm a Computer Science graduate with
+                    hands-on experience building web
+                    applications using Python, Flask,
+                    JavaScript and AI APIs.
+                </p>
+
+                <p>
+                    My projects cover machine learning,
+                    conversational interfaces, travel
+                    discovery and interactive web experiences.
+                </p>
+
+
+                <div class="education">
+
+                    <span>EDUCATION</span>
+
+                    <strong>
+                        B.Tech — Computer Science & Engineering
+                    </strong>
+
+                    <small>
+                        Techno Main Salt Lake · 2022–2026
+                    </small>
+
+                    <small>
+                        CGPA: 7.44
+                    </small>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= ACHIEVEMENTS ================= -->
+
+    <section class="achievements">
+
+        <div class="section-intro">
+
+            <span>02.5 / HIGHLIGHTS</span>
+
+            <h2>
+                A few<br>
+                <em>milestones.</em>
+            </h2>
+
+        </div>
+
+
+        <div class="achievement-grid">
+
+            <div class="achievement">
+
+                <strong>2026</strong>
+
+                <span>
+                    B.Tech in Computer Science & Engineering
+                </span>
+
+            </div>
+
+
+            <div class="achievement">
+
+                <strong>SIH</strong>
+
+                <span>
+                    Smart India Hackathon participant
+                </span>
+
+            </div>
+
+
+            <div class="achievement">
+
+                <strong>NPTEL</strong>
+
+                <span>
+                    Introduction to Machine Learning
+                </span>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= SKILLS ================= -->
+
+    <section id="skills" class="skills">
+
+        <div class="section-intro">
+
+            <span>03 / TOOLBOX</span>
+
+            <h2>
+                What I<br>
+                <em>work with.</em>
+            </h2>
+
+        </div>
+
+
+        <div class="skill-list">
+
+            <div class="skill">
+
+                <span>01</span>
+
+                <strong>
+                    Programming
+                </strong>
+
+                <small>
+                    Python · Java · C · SQL
+                </small>
+
+            </div>
+
+
+            <div class="skill">
+
+                <span>02</span>
+
+                <strong>
+                    Web Development
+                </strong>
+
+                <small>
+                    HTML · CSS · JavaScript · Flask · REST APIs
+                </small>
+
+            </div>
+
+
+            <div class="skill">
+
+                <span>03</span>
+
+                <strong>
+                    Computer Science
+                </strong>
+
+                <small>
+                    DSA · OOP · DBMS
+                </small>
+
+            </div>
+
+
+            <div class="skill">
+
+                <span>04</span>
+
+                <strong>
+                    Developer Tools
+                </strong>
+
+                <small>
+                    Git · GitHub · VS Code
+                </small>
+
+            </div>
+
+
+            <div class="skill">
+
+                <span>05</span>
+
+                <strong>
+                    Design
+                </strong>
+
+                <small>
+                    UI/UX Design · Canva
+                </small>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= CONTACT ================= -->
+
+    <section id="contact" class="contact">
+
+        <div class="contact-main">
+
+            <span class="contact-label">
+                04 / CONTACT
+            </span>
+
+            <h2>
+                Have something<br>
+                <em>to build?</em>
+            </h2>
+
+            <div class="contact-links">
+
+                <a
+                    class="email"
+                    href="rimjhimchowdhury995@gmail.com"
+                >
+                    Contact Me ↗
+                </a>
+
+
+                <a
+                    class="feedback-button"
+                    href="https://forms.gle/mWZMpcCPiMfqegXS9"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    Send a suggestion ↗
+                </a>
+
+            </div>
+
+
+            <div class="social-links">
+
+                <a
+                    href="https://github.com/rimjhim85"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    GitHub ↗
+                </a>
+
+                <a
+                    href="https://in.linkedin.com/in/rimjhim-chowdhury-009417264"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    LinkedIn ↗
+                </a>
+
+                <a
+                    href="assets/Rimjhim-Chowdhury-Resume.pdf"
+                    target="_blank"
+                >
+                    Resume ↗
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <footer>
+
+            <span>
+                RIMJHIM CHOWDHURY
+            </span>
+
+            <span>
+                © <span id="year"></span>
+            </span>
+
+            <span>
+                DEVELOPER
+            </span>
+
+        </footer>
+
+    </section>
+
+</main>
+
 
 <script src="script.js"></script>
 
 </body>
-
 </html>
-
